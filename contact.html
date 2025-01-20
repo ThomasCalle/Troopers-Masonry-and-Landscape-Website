@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!--=============== CSS ===============-->
-    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Contact Us - Troopers Masonry and Landscape</title>
 </head>
@@ -23,9 +23,9 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li><a href="index.html" class="nav__link">Home</a></li>
-                    <li><a href="projects.html" class="nav__link">Projects</a></li>
-                    <li><a href="news.html" class="nav__link">News</a></li>
-                    <li><a href="store.html" class="nav__link">Store</a></li>
+                    <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
                     <li><a href="contact.html" class="nav__link active-link">Contact</a></li>
                 </ul>
 
@@ -43,34 +43,77 @@
     </header>
 
     <!--==================== MAIN ====================-->
-    <main class="main">
-        <section class="contact section">
+    <main class="main" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <section class="contact section" style="text-align: center;">
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>We'd love to hear from you. Use the form below to get in touch!</p>
 
-                <form action="#" method="POST">
-                    <div>
+                <form action="#" method="POST" style="max-width: 500px; margin: 0 auto;">
+                    <div style="margin-bottom: 1rem;">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
                     </div>
 
-                    <div>
+                    <div style="margin-bottom: 1rem;">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
                     </div>
 
-                    <div>
+                    <div style="margin-bottom: 1rem;">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;"></textarea>
                     </div>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="button" style="padding: 0.75rem 1.5rem; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
                 </form>
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        .contact-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section style="text-align: center; margin-top: 50px;">
+        <h1>Contact Us</h1>
+        <p>Reach out to us via email, call, or text with a single click!</p>
+
+        <!-- Email Button -->
+        <a href="mailto:troopers.canada@gmail.com" class="contact-button">Email</a>
+
+        <!-- Call Button -->
+        <a href="tel:+1234567890" class="contact-button">Call</a>
+
+        <!-- Text Button -->
+        <a href="sms:+1234567890" class="contact-button">Text</a>
+    </section>
+    
+</body>
+</html>
+
             </div>
         </section>
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer>
         <div>

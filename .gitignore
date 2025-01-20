@@ -71,6 +71,7 @@ web_modules/            # Snowpack dependencies
 .idea/                  # WebStorm/IntelliJ IDEA project settings
 .vscode/                # Visual Studio Code settings
 .vscode-test/           # VSCode test configurations
+.DS_Store  
 
 # Yarn files
 .yarn-integrity         # Yarn integrity file
