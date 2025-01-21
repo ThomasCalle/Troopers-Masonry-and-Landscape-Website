@@ -46,3 +46,16 @@ const swiperHome = new Swiper('.home__swiper', {
       prevEl: '.swiper-button-prev',
    },
 })
+
+//=============== FOOTER ===============//
+// Dynamically create and insert footer content
+document.addEventListener("DOMContentLoaded", function () {
+   const footer = document.getElementById("footer");
+ 
+   if (footer) {
+     // Change new Date().getFullYear() to 2025 if desired
+     footer.innerHTML = `
+       <p>&copy; 2025 Troopers Masonry and Landscape. All Rights Reserved. <a href="/privacy-policy.html">Privacy Policy</a></p>
+     `;
+   }
+ });

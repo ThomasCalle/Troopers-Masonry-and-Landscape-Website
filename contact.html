@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Contact Us - Troopers Masonry and Landscape</title>
+
+    <style>
+        .contact-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <!--==================== HEADER ====================-->
@@ -44,84 +64,42 @@
 
     <!--==================== MAIN ====================-->
     <main class="main" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <section class="contact section" style="text-align: center;">
-            <div class="container">
+        <section class="contact section" style="display: flex; width: 80%; max-width: 1200px;">
+            <div class="contact-info" style="flex: 1; background-color: #008000; padding: 2rem;">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
+                <div class="info">
+                    <div class="information">
+                        <img src="img/location.png" class="icon" alt="" />
+                        <p>154 Caledonia Road. Toronto, ON M6E 4S7</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/email.png" class="icon" alt="" />
+                        <p>troopers.canada@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/phone.png" class="icon" alt="" />
+                        <p>(647)203-3850</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-buttons" style="flex: 1; background-color: #fff; padding: 2rem; display: flex; flex-direction: column; gap: 1rem;">
                 <h2>Contact Us</h2>
-                <p>We'd love to hear from you. Use the form below to get in touch!</p>
-
-                <form action="#" method="POST" style="max-width: 500px; margin: 0 auto;">
-                    <div style="margin-bottom: 1rem;">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Full Name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email Address" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
-                    </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;"></textarea>
-                    </div>
-
-                    <button type="submit" class="button" style="padding: 0.75rem 1.5rem; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
-                </form>
-                <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        .contact-button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .contact-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <section style="text-align: center; margin-top: 50px;">
-        <h1>Contact Us</h1>
-        <p>Reach out to us via email, call, or text with a single click!</p>
-
-        <!-- Email Button -->
-        <a href="mailto:troopers.canada@gmail.com" class="contact-button">Email</a>
-
-        <!-- Call Button -->
-        <a href="tel:+1234567890" class="contact-button">Call</a>
-
-        <!-- Text Button -->
-        <a href="sms:+1234567890" class="contact-button">Text</a>
-    </section>
-    
-</body>
-</html>
-
+                <a href="mailto:troopers.canada@gmail.com" class="contact-button">Email</a>
+                <a href="tel:+16472033850" class="contact-button">Call</a>
+                <a href="sms:+16472033850" class="contact-button">Text</a>
             </div>
         </section>
     </main>
-    <!--==================== FOOTER ====================-->
-    <footer>
-        <div>
-            <p>© 2024 Troopers Masonry and Landscape. All Rights Reserved.</p>
-        </div>
-    </footer>
 
-    <!--=============== MAIN JS ===============-->
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        © 2025 Troopers Masonry and Landscape. All Rights Reserved. 
+        <a href="/privacy-policy.html">Privacy Policy</a>
+    </footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

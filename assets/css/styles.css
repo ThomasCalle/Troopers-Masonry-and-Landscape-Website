@@ -365,3 +365,24 @@ img {
     max-height: 1000px;
   }
 }
+
+/*=============== FOOTER ===============*/
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--black-color); /* Matches existing theme */
+  color: var(--white-color); /* Ensures consistent font color */
+  font-size: var(--normal-font-size);
+  position: relative; /* Changed from fixed to relative */
+  width: 100%;
+  z-index: var(--z-fixed); /* Ensures it appears above other content */
+}
+
+.footer a {
+  color: var(--white-color); /* Keeps links consistent with the footer text */
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none; /* Adds subtle interaction feedback */
+}
