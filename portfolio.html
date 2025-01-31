@@ -15,34 +15,93 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <title>Portfolio - Troopers Masonry and Landscape</title>
   </head>
 <body>
-    <!-- HEADER -->
-     <header class="header" id="header">
+     <!--==================== HEADER ====================-->
+    <header class="header" id="header">
       <nav class="nav container">
-        <a href="index.html" class="nav__logo">Troopers Masonry and Landscape</a>
-        <div class="nav__menu">
+        <a href="#" class="nav__logo">Troopers Masonry and Landscape</a>
+
+        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="portfolio.html" class="nav__link active-link">Portfolio</a></li>
+            <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
             <li><a href="services.html" class="nav__link">Services</a></li>
             <li><a href="about.html" class="nav__link">About Us</a></li>
             <li><a href="contact.html" class="nav__link">Contact</a></li>
           </ul>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
         </div>
       </nav>
-     </header>
+    </header>
+
+  
     <!-- MAIN CONTENT -->
-    <main class="main" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-      <section class="portfolio section" style="text-align: center;">
+    <main class="main" style="display: flex; flex-direction: column; align-items: center;">
+
+      <!--==================== PORTFOLIO SECTION ====================-->
+      <section class="portfolio section" style="text-align: center; padding: 4rem 1.5rem;">
         <div class="container">
           <h1>Our Portfolio</h1>
           <p>Explore our previous projects, showcasing our expertise in masonry and landscaping.</p>
         </div>
       </section>
+      <!--==================== STACKED SECTIONS START ====================-->
+
+      <!-- Section 1 -->
+      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%; 
+                      background: linear-gradient(180deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.5)); padding: 2rem;">
+        <div style="display: flex; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
+          <img src="assets/img/placeholder1.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
+          <div style="flex: 1; color: white;">
+            <h2>Section One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum arcu ac arcu commodo, sit amet sodales libero consectetur.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%; 
+                      background: linear-gradient(180deg, rgba(0, 255, 0, 0.1), rgba(0, 255, 0, 0.5)); padding: 2rem;">
+        <div style="display: flex; flex-direction: row-reverse; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
+          <img src="assets/img/placeholder2.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
+          <div style="flex: 1; color: white;">
+            <h2>Section Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut magna a metus gravida condimentum in sit amet ligula.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%; 
+                      background: linear-gradient(180deg, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.5)); padding: 2rem;">
+        <div style="display: flex; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
+          <img src="assets/img/placeholder3.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
+          <div style="flex: 1; color: white;">
+            <h2>Section Three</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia magna et ligula luctus, a bibendum lorem vestibulum.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== STACKED SECTIONS END ====================-->
+
     </main>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer">
