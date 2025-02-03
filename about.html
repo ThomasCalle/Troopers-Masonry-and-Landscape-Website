@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+     
     <!--=============== SEO META TAGS ===============-->
-    <meta name="description" content="Learn more about Troopers Masonry and Landscape, our mission, and our team of expert professionals." />
-    <meta name="keywords" content="About Troopers Masonry, Landscaping Experts, Construction Services" />
+    <meta name="description" content="About Troopers Masonry and Landscape: Learn more about our expertise in masonry and landscaping services." />
+    <meta name="keywords" content="Masonry, Landscaping, Construction, About Us, Troopers Masonry and Landscape" />
     <meta name="author" content="Troopers Masonry and Landscape" />
     <meta name="robots" content="index, follow" />
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <!--=============== CANONICAL TAG ===============-->
+    <link rel="canonical" href="https://www.troopersmasonryandlandscape.com/about.html" />
 
-    <!--=============== CSS ===============-->
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== STYLESHEET ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>About Us - Troopers Masonry and Landscape</title>
   </head>
+
   <body>
-    <!-- HEADER -->
+    <!--==================== HEADER & NAV ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="about.html" class="nav__logo">Troopers Masonry and Landscape</a>
+        <a href="index.html" class="nav__logo">Troopers Masonry and Landscape</a>
+
+        <!-- Mobile Navigation Menu -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li><a href="index.html" class="nav__link">Home</a></li>
@@ -31,31 +43,44 @@
             <li><a href="about.html" class="nav__link active-link">About Us</a></li>
             <li><a href="contact.html" class="nav__link">Contact</a></li>
           </ul>
+          
           <!-- Close button -->
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
-        <!-- Toggle button -->
+
+        <!-- Hamburger Menu Button (Mobile) -->
         <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
+          <i class="ri-menu-line"></i>
         </div>
       </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="main" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <section class="about section" style="text-align: center;">
-            <div class="container">
-        <h1>About Us</h1>
-        <p>At Troopers Masonry and Landscape, we are committed to delivering top-notch masonry and landscaping solutions tailored to your needs. Our team is passionate about creating beautiful, durable, and functional outdoor spaces.</p>
+    <!--==================== MAIN CONTENT ====================-->
+    <main class="main" style="padding-top: 6rem;"> <!-- Fix for text being pressed against navbar -->
+      <section class="about section">
+        <div class="container" style="padding-bottom: 4rem;"> <!-- Ensures spacing before footer -->
+          <h1>About Us</h1>
+          <p>Troopers Masonry and Landscape is dedicated to providing high-quality masonry and landscaping services...</p>
+        </div>
       </section>
     </main>
-    <!--=============== FOOTER ===============-->
+
+    <!--=============== FOOTER ====================-->
     <footer class="footer">
-      © 2025 Troopers Masonry and Landscape. All Rights Reserved. 
-      <a href="/privacy-policy.html">Privacy Policy</a>
+      <p>&copy; 2025 Troopers Masonry and Landscape. All Rights Reserved.</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a> |
+        <a href="accessibility.html">Accessibility Statement</a>
+      </p>
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
