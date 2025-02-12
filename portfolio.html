@@ -24,8 +24,101 @@
 
     <!--=============== STYLESHEET ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/nav-styles.css" />
 
     <title>Portfolio - Troopers Masonry and Landscape</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin: 20px;
+            background-color: #f5f5f5;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: black;
+        }
+        h2 {
+            color: white; /* Change color to white */
+            font-size: 2rem; /* Reduce size by 50% */
+            margin-bottom: 2rem; /* Add distance between header and containers */
+            opacity: 0; /* Initial state for fade-in effect */
+            animation: fadeIn 2s forwards; /* Fade-in effect */
+        }
+        .subheader {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 2s forwards 0.5s; /* Fade-in effect with delay */
+        }
+        .introduction {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 2s forwards 1s; /* Fade-in effect with delay */
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            text-align: left;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        /* Main container for sections */
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0; /* Initial state for fade-in effect */
+            animation: fadeIn 2s forwards 1s; /* Fade-in effect with delay */
+        }
+        .portfolio-section {
+            flex: 1 1 calc(33.33% - 20px); /* 3 Columns */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smoother transition */
+        }
+        .portfolio-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); /* Glowing hue */
+        }
+        .thumbnail {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* 📱 RESPONSIVE DESIGN */
+        @media (max-width: 900px) { /* Tablet View: 2 Columns */
+            .portfolio-section {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 600px) { /* Mobile View: 1 Column */
+            .portfolio-section {
+                flex: 1 1 calc(90% - 20px); /* Make it thinner */
+            }
+        }
+
+        /* Add padding to the top and bottom of the main content */
+        main {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    </style>
   </head>
 
   <body>
@@ -57,65 +150,126 @@
       </nav>
     </header>
 
-    <!--==================== MAIN CONTENT ====================-->
-    <main class="main" style="display: flex; flex-direction: column; align-items: center;">
-      <!--==================== PORTFOLIO SECTION ====================-->
-      <section class="portfolio section" style="text-align: center; padding: 4rem 1.5rem;">
-        <div class="container">
-          <h1>Our Portfolio</h1>
-          <p>Explore our previous projects, showcasing our expertise in masonry and landscaping.</p>
-        </div>
-      </section>
+    <main>
+      <h2>Portfolio Sections</h2>
+      <h3 class="subheader">A Legacy of Craftsmanship: Our Signature Work</h3>
+      <p class="introduction">
+        Introduction:<br><br>
+        At Troopers Masonry and Landscape, we believe that true craftsmanship speaks for itself. Our portfolio is a testament to the artistry, precision, and dedication that define every project we undertake.<br><br>
+        From bespoke stone patios and grand masonry facades to exquisite interlock driveways and impeccably maintained landscapes, our work harmonizes form and function to elevate residential and commercial properties alike.<br><br>
+        Each project reflects our unwavering commitment to quality, durability, and aesthetic excellence—transforming outdoor spaces into timeless sanctuaries of sophistication and strength.<br><br>
+        Discover the depth of our expertise and the elegance of our creations through our carefully curated showcase.
+      </p>
 
-      <!--==================== STACKED SECTIONS START ====================-->
-      <!-- Section 1 -->
-      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%;
-                      background: linear-gradient(180deg, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.5)); padding: 2rem;">
-        <div style="display: flex; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
-          <img src="assets/img/placeholder1.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
-          <div style="flex: 1; color: white;">
-            <h2>Section One</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum arcu ac arcu commodo, sit amet sodales libero consectetur.</p>
+      <div class="portfolio-container">
+          <div class="portfolio-section" onclick="loadSection('1T4bERaK-0bEB2sJIjdraG7hWYH51SSAI')">
+              <h3>Section 1</h3>
+              <img id="section1-thumb" class="thumbnail" src="placeholder1.jpg" alt="Section 1 Thumbnail">
           </div>
-        </div>
-      </section>
 
-      <!-- Section 2 -->
-      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%;
-                      background: linear-gradient(180deg, rgba(0, 255, 0, 0.1), rgba(0, 255, 0, 0.5)); padding: 2rem;">
-        <div style="display: flex; flex-direction: row-reverse; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
-          <img src="assets/img/placeholder2.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
-          <div style="flex: 1; color: white;">
-            <h2>Section Two</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut magna a metus gravida condimentum in sit amet ligula.</p>
+          <div class="portfolio-section" onclick="loadSection('1FuA8n3cEdH-Pj7aFc8-_pnxh36cUSI5b')">
+              <h3>Section 2</h3>
+              <img id="section2-thumb" class="thumbnail" src="placeholder2.jpg" alt="Section 2 Thumbnail">
           </div>
-        </div>
-      </section>
 
-      <!-- Section 3 -->
-      <section style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100%;
-                      background: linear-gradient(180deg, rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.5)); padding: 2rem;">
-        <div style="display: flex; align-items: center; max-width: 1200px; width: 100%; gap: 2rem;">
-          <img src="assets/img/placeholder3.jpg" alt="Placeholder Image" style="width: 50%; max-width: 500px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);">
-          <div style="flex: 1; color: white;">
-            <h2>Section Three</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia magna et ligula luctus, a bibendum lorem vestibulum.</p>
+          <div class="portfolio-section" onclick="loadSection('1RotVhQYx4dA0gIyJYz4X3XML9BwkwF1H')">
+              <h3>Section 3</h3>
+              <img id="section3-thumb" class="thumbnail" src="placeholder3.jpg" alt="Section 3 Thumbnail">
           </div>
-        </div>
-      </section>
-      <!--==================== STACKED SECTIONS END ====================-->
+
+          <div class="portfolio-section" onclick="loadSection('1h0tq-cWo2ETXNQzq8NDNnfwyzySEIA4l')">
+              <h3>Section 4</h3>
+              <img id="section4-thumb" class="thumbnail" src="placeholder4.jpg" alt="Section 4 Thumbnail">
+          </div>
+
+          <div class="portfolio-section" onclick="loadSection('1qh_TDziCkI5WIARgLWUcnugVkau8cf4a')">
+              <h3>Section 5</h3>
+              <img id="section5-thumb" class="thumbnail" src="placeholder5.jpg" alt="Section 5 Thumbnail">
+          </div>
+
+          <div class="portfolio-section" onclick="loadSection('1cgI8TYeyZjbUv5v9LQrRcbrx902LuG7-')">
+              <h3>Section 6</h3>
+              <img id="section6-thumb" class="thumbnail" src="placeholder6.jpg" alt="Section 6 Thumbnail">
+          </div>
+      </div>
+
+      <!-- Dynamic Photo Feed (Hidden Until Clicked) -->
+      <h2 id="photo-feed-title" style="display: none;"></h2>
+      <div id="photo-feed"></div>
     </main>
 
-    <!--==================== FOOTER ====================-->
-<footer class="footer">
-  <p>&copy; 2025 Troopers Masonry and Landscape. All Rights Reserved.</p>
-  <p>
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="terms-of-service.html">Terms of Service</a> |
-    <a href="accessibility.html">Accessibility Statement</a>
-  </p>
-</footer>
+    <script>
+        const apiKey = "AIzaSyByEmBYbXbHgAaVXbbQZ23Pf4IhC01n3PM";
 
+        // Function to fetch and set the main folder image (thumbnail)
+        async function setMainThumbnail(folderId, imgElementId) {
+            const url = `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents&key=${apiKey}&fields=files(id,name,mimeType,thumbnailLink)&pageSize=1`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.files && data.files.length > 0) {
+                    document.getElementById(imgElementId).src = data.files[0].thumbnailLink;
+                }
+            } catch (error) {
+                console.error("Error fetching thumbnail:", error);
+            }
+        }
+
+        // Function to load a section when clicked
+        async function loadSection(folderId) {
+            document.getElementById("photo-feed-title").innerText = `Gallery: ${folderId}`;
+            document.getElementById("photo-feed-title").style.display = "block";
+            document.getElementById("photo-feed").style.display = "grid";
+            document.getElementById("photo-feed").innerHTML = "<p>Loading images...</p>";
+
+            const url = `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents&key=${apiKey}&fields=files(id,name,mimeType,thumbnailLink)`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.files && data.files.length > 0) {
+                    const photoFeed = document.getElementById("photo-feed");
+                    photoFeed.innerHTML = ""; // Clear previous images
+
+                    data.files.forEach(file => {
+                        if (file.mimeType.startsWith("image/")) {
+                            const img = document.createElement("img");
+                            img.src = file.thumbnailLink;
+                            img.alt = file.name;
+                            img.onclick = () => window.open(`https://drive.google.com/uc?export=view&id=${file.id}`, "_blank");
+                            photoFeed.appendChild(img);
+                        }
+                    });
+                } else {
+                    document.getElementById("photo-feed").innerHTML = "<p>No images found in the folder.</p>";
+                }
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                document.getElementById("photo-feed").innerHTML = "<p>Error loading images.</p>";
+            }
+        }
+
+        // Load Placehodler Image thumbnails for all 6 sections
+        setMainThumbnail("1T4bERaK-0bEB2sJIjdraG7hWYH51SSAI", "section1-thumb");
+        setMainThumbnail("1FuA8n3cEdH-Pj7aFc8-_pnxh36cUSI5b", "section2-thumb");
+        setMainThumbnail("1RotVhQYx4dA0gIyJYz4X3XML9BwkwF1H", "section3-thumb");
+        setMainThumbnail("1h0tq-cWo2ETXNQzq8NDNnfwyzySEIA4l", "section4-thumb");
+        setMainThumbnail("1qh_TDziCkI5WIARgLWUcnugVkau8cf4a", "section5-thumb");
+        setMainThumbnail("1cgI8TYeyZjbUv5v9LQrRcbrx902LuG7-", "section6-thumb");
+    </script>
+
+    <!--=============== FOOTER ====================-->
+    <footer class="footer" style="text-align: center; padding: 1rem; margin-top: 2rem;">
+        <p>&copy; 2025 Troopers Masonry and Landscape. All Rights Reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms-of-service.html">Terms of Service</a> |
+            <a href="accessibility.html">Accessibility Statement</a>
+        </p>
+    </footer>
 
     <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>

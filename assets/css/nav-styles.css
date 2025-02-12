@@ -1,0 +1,28 @@
+/* ...existing code... */
+
+.nav {
+    /* Remove previous changes */
+    background-color: transparent; /* Ensure the nav bar has no background */
+    /* ...existing styles... */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjus height as needed */
+    background-color: black; /* Black bar background */
+    z-index: -1; /* Ensure it stays behind the nav bar */
+}
+
+/* ...existing code... */
